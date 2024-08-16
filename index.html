@@ -187,6 +187,10 @@
             </div>
             <div class="row justify-content-center">
                 <form name="PesanGit" class="col-sm-6 col-8">
+                    <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
+                        <strong>Berhasil!</strong> Terimakasih, pesan kamu sudah saya terima.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
                     <div class="mb-3">
                         <label for="nama" class="form-label">Nama</label>
                         <input type="text" class="form-control" id="nama" name="nama" />
@@ -200,6 +204,10 @@
                         <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
                     </div>
                     <button type="submit" class="btn btn-secondary">Kirim</button>
+                    <button class="btn btn-secondary d-none" type="button" disabled>
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Mengirim...
+                    </button>
                 </form>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
