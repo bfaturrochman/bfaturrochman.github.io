@@ -13,6 +13,9 @@
             crossorigin="anonymous"
         />
 
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
         <!-- my CSS -->
         <link rel="stylesheet" href="style.css" />
 
@@ -81,14 +84,14 @@
                 </div>
 
                 <div class="row text-center justify-content-center fs-5 m-5">
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-right">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio molestias repellat tempora dolorum fugiat eos
                             ipsam veniam laboriosam dicta ratione.
                         </p>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-left">
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum dignissimos nulla doloribus voluptates
                             voluptatibus neque alias. Ipsum, quaerat cum. Accusamus provident, unde sunt aperiam eius eveniet ipsum eaque
@@ -118,7 +121,7 @@
 
             <div class="row m-5 justify-content-center">
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in" data-aos-duration="100">
                         <img src="https://picsum.photos/500" class="card-img-top" alt="..." />
                         <div class="card-body">
                             <p class="card-text">
@@ -128,7 +131,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in" data-aos-duration="200">
                         <img src="https://picsum.photos/501" class="card-img-top" alt="..." />
                         <div class="card-body">
                             <p class="card-text">
@@ -138,7 +141,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in" data-aos-duration="300">
                         <img src="https://picsum.photos/502" class="card-img-top" alt="..." />
                         <div class="card-body">
                             <p class="card-text">
@@ -148,7 +151,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in" data-aos-duration="400">
                         <img src="https://picsum.photos/503" class="card-img-top" alt="..." />
                         <div class="card-body">
                             <p class="card-text">
@@ -158,7 +161,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in" data-aos-duration="500">
                         <img src="https://picsum.photos/504" class="card-img-top" alt="..." />
                         <div class="card-body">
                             <p class="card-text">
@@ -229,12 +232,14 @@
         </footer>
         <!-- Akhir Footer -->
 
+        <!-- Script Bootstrap5 -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"
         ></script>
 
+        <!-- Script Form -->
         <script>
             const scriptURL =
                 "https://script.google.com/macros/s/AKfycbxYeN23Osbs4ezXujqWa4FVTSO4OYe0RGsEdjFzNcdmYxJs4egomanKHFZriwNaHbnQ/exec";
@@ -266,6 +271,14 @@
                         form.reset();
                     })
                     .catch((error) => console.error("Gagal!", error.message));
+            });
+        </script>
+
+        <!-- Script AOS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: true,
             });
         </script>
     </body>
